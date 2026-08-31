@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 项目产物（每个视频工程的输出目录）
+output/
+*.tmp
+
+# 系统文件
+.DS_Store
