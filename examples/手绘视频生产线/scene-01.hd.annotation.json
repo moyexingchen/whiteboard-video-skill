@@ -1,0 +1,491 @@
+{
+  "sceneId": "scene-01",
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "storyBasis": "你现在看到的这个手绘视频，是我搭的一条自动化生产线做出来的",
+  "sceneDurationMs": 68628,
+  "elements": [
+    {
+      "id": "el-01",
+      "label": "区域1",
+      "sequence": 1,
+      "narrativeRole": "你现在看到的这个手绘视频，是我搭的一条自动化生产线做出来的",
+      "subtitle": "你现在看到的这个手绘视频，是我搭的一条自动化生产线做出来的",
+      "type": "structure",
+      "region": {
+        "x": 185,
+        "y": 177,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "top_to_bottom",
+        "startMs": 330,
+        "durationMs": 5612,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          195,
+          267
+        ],
+        "end": [
+          395,
+          267
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-02",
+      "label": "区域2",
+      "sequence": 2,
+      "narrativeRole": "你只需给它一篇口播稿",
+      "subtitle": "你只需给它一篇口播稿",
+      "type": "structure",
+      "region": {
+        "x": 510,
+        "y": 177,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 5942,
+        "durationMs": 2660,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          520,
+          267
+        ],
+        "end": [
+          720,
+          267
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-03",
+      "label": "区域3",
+      "sequence": 3,
+      "narrativeRole": "它先把稿子切成短句，让配音引擎逐句读出来",
+      "subtitle": "它先把稿子切成短句，让配音引擎逐句读出来",
+      "type": "structure",
+      "region": {
+        "x": 845,
+        "y": 177,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 8602,
+        "durationMs": 4532,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          855,
+          267
+        ],
+        "end": [
+          1055,
+          267
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-04",
+      "label": "区域4",
+      "sequence": 4,
+      "narrativeRole": "每句配完音，都量出真实时长，精确到毫秒",
+      "subtitle": "每句配完音，都量出真实时长，精确到毫秒",
+      "type": "structure",
+      "region": {
+        "x": 1115,
+        "y": 177,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 13134,
+        "durationMs": 4964,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1125,
+          267
+        ],
+        "end": [
+          1325,
+          267
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-05",
+      "label": "区域5",
+      "sequence": 5,
+      "narrativeRole": "画面这边，AI 先画一张手绘线稿",
+      "subtitle": "画面这边，AI 先画一张手绘线稿",
+      "type": "structure",
+      "region": {
+        "x": 1500,
+        "y": 177,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 18098,
+        "durationMs": 4148,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1510,
+          267
+        ],
+        "end": [
+          1710,
+          267
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-06",
+      "label": "区域6",
+      "sequence": 6,
+      "narrativeRole": "暖米黄的纸底，深灰的线条，一句台词对应一个元素",
+      "subtitle": "暖米黄的纸底，深灰的线条，一句台词对应一个元素",
+      "type": "structure",
+      "region": {
+        "x": 183,
+        "y": 444,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 22246,
+        "durationMs": 5756,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          193,
+          534
+        ],
+        "end": [
+          393,
+          534
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-07",
+      "label": "区域7",
+      "sequence": 7,
+      "narrativeRole": "程序再扫描整张图，把每个元素框出来，算出它该在哪个瞬间出现",
+      "subtitle": "程序再扫描整张图，把每个元素框出来，算出它该在哪个瞬间出现",
+      "type": "structure",
+      "region": {
+        "x": 510,
+        "y": 444,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 28002,
+        "durationMs": 6884,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          520,
+          534
+        ],
+        "end": [
+          720,
+          534
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-08",
+      "label": "区域8",
+      "sequence": 8,
+      "narrativeRole": "你听到一句话开口，笔尖已经提前七十毫秒落在纸上",
+      "subtitle": "你听到一句话开口，笔尖已经提前七十毫秒落在纸上",
+      "type": "structure",
+      "region": {
+        "x": 845,
+        "y": 444,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 34886,
+        "durationMs": 5132,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          855,
+          534
+        ],
+        "end": [
+          1055,
+          534
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-09",
+      "label": "区域9",
+      "sequence": 9,
+      "narrativeRole": "声音到哪，画到哪",
+      "subtitle": "声音到哪，画到哪",
+      "type": "structure",
+      "region": {
+        "x": 1115,
+        "y": 444,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 40018,
+        "durationMs": 2996,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1125,
+          534
+        ],
+        "end": [
+          1325,
+          534
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-10",
+      "label": "区域10",
+      "sequence": 10,
+      "narrativeRole": "字幕也不用另外做",
+      "subtitle": "字幕也不用另外做",
+      "type": "structure",
+      "region": {
+        "x": 1500,
+        "y": 444,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 43014,
+        "durationMs": 2660,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1510,
+          534
+        ],
+        "end": [
+          1710,
+          534
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-11",
+      "label": "区域11",
+      "sequence": 11,
+      "narrativeRole": "逐句量过时长，字幕的起止，就是每句话的起止",
+      "subtitle": "逐句量过时长，字幕的起止，就是每句话的起止",
+      "type": "structure",
+      "region": {
+        "x": 183,
+        "y": 784,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 45674,
+        "durationMs": 5180,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          193,
+          874
+        ],
+        "end": [
+          393,
+          874
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-12",
+      "label": "区域12",
+      "sequence": 12,
+      "narrativeRole": "最后混音，上字幕，合成成片",
+      "subtitle": "最后混音，上字幕，合成成片",
+      "type": "structure",
+      "region": {
+        "x": 515,
+        "y": 784,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 50854,
+        "durationMs": 4244,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          525,
+          874
+        ],
+        "end": [
+          725,
+          874
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-13",
+      "label": "区域13",
+      "sequence": 13,
+      "narrativeRole": "画面是 1080p，每秒 60 帧，标准横屏",
+      "subtitle": "画面是 1080p，每秒 60 帧，标准横屏",
+      "type": "structure",
+      "region": {
+        "x": 845,
+        "y": 784,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 55098,
+        "durationMs": 5252,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          855,
+          874
+        ],
+        "end": [
+          1055,
+          874
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-14",
+      "label": "区域14",
+      "sequence": 14,
+      "narrativeRole": "从头到尾，人只做一件事，把稿子写好",
+      "subtitle": "从头到尾，人只做一件事，把稿子写好",
+      "type": "structure",
+      "region": {
+        "x": 1108,
+        "y": 784,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 60350,
+        "durationMs": 4412,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1118,
+          874
+        ],
+        "end": [
+          1318,
+          874
+        ],
+        "easing": "easeInOut"
+      }
+    },
+    {
+      "id": "el-15",
+      "label": "区域15",
+      "sequence": 15,
+      "narrativeRole": "剩下的事，交给这支笔",
+      "subtitle": "剩下的事，交给这支笔",
+      "type": "structure",
+      "region": {
+        "x": 1637,
+        "y": 784,
+        "width": 220,
+        "height": 180
+      },
+      "reveal": {
+        "direction": "left_to_right",
+        "startMs": 64762,
+        "durationMs": 3866,
+        "maskPaddingPx": 18,
+        "protectedRegions": []
+      },
+      "handPath": {
+        "start": [
+          1647,
+          874
+        ],
+        "end": [
+          1847,
+          874
+        ],
+        "easing": "easeInOut"
+      }
+    }
+  ]
+}

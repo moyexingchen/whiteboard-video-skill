@@ -1,0 +1,116 @@
+{
+  "voice": "zh-CN-YunxiNeural",
+  "rate": "+0%",
+  "pitch": "+0Hz",
+  "initial_silence_ms": 400,
+  "gap_ms": 20,
+  "tail_ms": 700,
+  "total_ms": 68628,
+  "lines": [
+    {
+      "index": 1,
+      "text": "你现在看到的这个手绘视频，是我搭的一条自动化生产线做出来的",
+      "duration_ms": 5592,
+      "start_ms": 400,
+      "file": "vo/line01.mp3"
+    },
+    {
+      "index": 2,
+      "text": "你只需给它一篇口播稿",
+      "duration_ms": 2640,
+      "start_ms": 6012,
+      "file": "vo/line02.mp3"
+    },
+    {
+      "index": 3,
+      "text": "它先把稿子切成短句，让配音引擎逐句读出来",
+      "duration_ms": 4512,
+      "start_ms": 8672,
+      "file": "vo/line03.mp3"
+    },
+    {
+      "index": 4,
+      "text": "每句配完音，都量出真实时长，精确到毫秒",
+      "duration_ms": 4944,
+      "start_ms": 13204,
+      "file": "vo/line04.mp3"
+    },
+    {
+      "index": 5,
+      "text": "画面这边，AI 先画一张手绘线稿",
+      "duration_ms": 4128,
+      "start_ms": 18168,
+      "file": "vo/line05.mp3"
+    },
+    {
+      "index": 6,
+      "text": "暖米黄的纸底，深灰的线条，一句台词对应一个元素",
+      "duration_ms": 5736,
+      "start_ms": 22316,
+      "file": "vo/line06.mp3"
+    },
+    {
+      "index": 7,
+      "text": "程序再扫描整张图，把每个元素框出来，算出它该在哪个瞬间出现",
+      "duration_ms": 6864,
+      "start_ms": 28072,
+      "file": "vo/line07.mp3"
+    },
+    {
+      "index": 8,
+      "text": "你听到一句话开口，笔尖已经提前七十毫秒落在纸上",
+      "duration_ms": 5112,
+      "start_ms": 34956,
+      "file": "vo/line08.mp3"
+    },
+    {
+      "index": 9,
+      "text": "声音到哪，画到哪",
+      "duration_ms": 2976,
+      "start_ms": 40088,
+      "file": "vo/line09.mp3"
+    },
+    {
+      "index": 10,
+      "text": "字幕也不用另外做",
+      "duration_ms": 2640,
+      "start_ms": 43084,
+      "file": "vo/line10.mp3"
+    },
+    {
+      "index": 11,
+      "text": "逐句量过时长，字幕的起止，就是每句话的起止",
+      "duration_ms": 5160,
+      "start_ms": 45744,
+      "file": "vo/line11.mp3"
+    },
+    {
+      "index": 12,
+      "text": "最后混音，上字幕，合成成片",
+      "duration_ms": 4224,
+      "start_ms": 50924,
+      "file": "vo/line12.mp3"
+    },
+    {
+      "index": 13,
+      "text": "画面是 1080p，每秒 60 帧，标准横屏",
+      "duration_ms": 5232,
+      "start_ms": 55168,
+      "file": "vo/line13.mp3"
+    },
+    {
+      "index": 14,
+      "text": "从头到尾，人只做一件事，把稿子写好",
+      "duration_ms": 4392,
+      "start_ms": 60420,
+      "file": "vo/line14.mp3"
+    },
+    {
+      "index": 15,
+      "text": "剩下的事，交给这支笔",
+      "duration_ms": 3096,
+      "start_ms": 64832,
+      "file": "vo/line15.mp3"
+    }
+  ]
+}
