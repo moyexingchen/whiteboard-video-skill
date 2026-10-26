@@ -41,17 +41,28 @@ flowchart LR
 
 - Python 3.10+（开发环境为 3.13）
 - ffmpeg + ffprobe（系统安装，`brew install ffmpeg` 或 `apt install ffmpeg`）
-- macOS / Linux（Windows 理论可行，未验证）
+- 预览脚本使用跨平台路径与浏览器接口；本次修复实测 Linux Python 预览生成与回归测试。macOS / Windows 仅做路径与启动分支模拟测试，未进行原生浏览器验证；完整制片管线的 Windows 支持仍未验证。
 
 ## 安装
 
 ```bash
-git clone https://github.com/<你的用户名>/whiteboard-video-skill.git
+git clone https://github.com/moyexingchen/whiteboard-video-skill.git
 cd whiteboard-video-skill
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
+
+Windows PowerShell 安装（Python 3.10+）：
+
+```powershell
+git clone https://github.com/moyexingchen/whiteboard-video-skill.git
+cd whiteboard-video-skill
+py -3 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+PowerShell 运行后续脚本时，将 `python` 换成 `.\.venv\Scripts\python.exe`，并将多行命令写成一行（bash 的 `\` 不是 PowerShell 续行符）。有空格的路径请加引号。系统 ffmpeg/ffprobe 仍需另行安装。
 
 以下命令均假设你在仓库根目录、venv 已激活。
 
@@ -127,7 +138,12 @@ python scripts/open_preview.py \
   --annotation myproject/assets/scene-01.hd.annotation.json
 ```
 
-自动生成一个内联线稿 + 标注的 HTML 预览台并用浏览器打开：
+预览模板和手部图片已包含在本仓库 `assets/`，不需要安装 WorkBuddy 或其他 Skill。
+脚本按自身位置解析资源，不受当前工作目录影响；生成的 HTML 内联线稿、标注和手部图片，可移动后离线打开。
+默认尝试 Chrome，失败后回退系统默认浏览器；也可指定 `--browser default`。
+无桌面环境使用 `--no-open`，再手动打开打印的 `file:` 地址，完成同样的人工确认。
+
+自动生成预览台并用浏览器打开：
 
 - 点 ▶ 或拖时间轴，直接看揭示动画效果
 - 拖区域四边 / 四角改区域；右侧面板改名称、方向、开始 / 结束毫秒
@@ -247,6 +263,8 @@ whiteboard-video-skill/
 ├── SKILL.md               # Agent 技能清单（触发词 + 工作流）
 ├── LICENSE                # MIT
 ├── requirements.txt
+├── assets/                # 随包提供的离线预览模板、手部图片及上游 MIT 许可证
+├── tests/                 # Python 回归测试与可选 Chromium 冒烟测试
 ├── scripts/               # 编排层（本项目的核心）
 │   ├── gen_vo_srt.py      #   1. 配音 + SRT + timing.json
 │   ├── auto_annotate.py   #   2. 线稿连通域自动标注
@@ -272,3 +290,26 @@ whiteboard-video-skill/
 - 本仓库编排层以 [MIT](LICENSE) 开源
 - `scripts/render/` 渲染引擎来自 [srt-whiteboard-animation](scripts/render/LICENSE.srt-whiteboard-animation)（MIT，© 江哥是老登啊），分区遮罩 + 流式笔迹的核心绘制能力由它提供
 - 配音使用微软 [edge-tts](https://github.com/rany2/edge-tts)
+
+## 预览回归测试
+
+无需视频/TTS 依赖的 Python 测试：
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+可选浏览器集成测试（需要 Node.js 与 Playwright）：
+
+```bash
+npm install --no-save --package-lock=false playwright
+npx playwright install chromium
+node tests/preview_smoke.cjs
+```
+
+该浏览器测试用于覆盖离线自动加载、播放、时间轴、字段编辑、区域拖拽、顺序调整和 JSON 下载回读。
+本次环境无法下载有效的 Chromium 安装包，因此浏览器集成测试尚未执行通过；不可将其标记为已验证。
+Linux 的 Python 回归测试已通过；浏览器启动分支的 mock 测试不代表 macOS/Windows 原生实测。
+完整配音和视频渲染不在此次预览回归的验证范围内。
+
+预览资源的固定上游提交、文件校验值及许可证见 [assets/UPSTREAM.md](assets/UPSTREAM.md)。
